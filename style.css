@@ -11,37 +11,37 @@ body{
   background-size: cover;
 
 }
-ul{
+.navbar{
   background-color: rgba(0, 0, 0, 0.5);
   text-align:center;
-  padding: 30px;
+  padding: 15px;
   margin: 0px;
 }
 
-li{
+.navbar_buttons{
   width: auto;
   height: 100px;
   display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 30px;
+  list-style: none;
+/*--margine negativo per eliminare lo spazio tra gli elemti LI, nn ho trovato un altra strada senza fare la navbar con i float)--*/
+  margin: -3px;
+  padding: 15px;
   border-left: 1px solid black;
 }
 
-ul li:first-child {
+.navbar_buttons:first-child {
   border-left: 0px;
 }
 
 a {
   text-decoration: none;
   color: white;
+  margin-left: -3px;
 }
 
-li:hover {
+.navbar_buttons:hover {
 background-color: rgba(0, 0, 0, 0.7);
 }
-
-
 
 .container{
   padding-top: 50px;
@@ -69,4 +69,81 @@ background-color: rgba(0, 0, 0, 0.7);
   height: 250px;
   border: 10px solid white;
   position: relative;
+}
+
+.colonna1{
+  width: 30%;
+  float: left;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.colonna2{
+  width: 36%;
+  float: left;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.colonna3{
+  width: 30%;
+  float: left;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+main{
+  margin:auto;
+  width: 900px;
+  margin: 0 auto;
+}
+
+main:after {
+clear: left;
+display: table;
+content:'';
+}
+
+.navbar2{
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.navbar_buttons2 a{
+ color: green;
+ list-style: none;
+}
+
+.navbar_buttons2{
+ margin-bottom: 10px;
+}
+
+p{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+footer{
+
+  width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
 }
