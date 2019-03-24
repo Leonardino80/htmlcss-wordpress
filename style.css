@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family:sans-serif;
+
+}
+
+body{
+  background-image: url('immagini/sfondo.jpg');
+  background-size: cover;
+
+}
+ul{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align:center;
+  padding: 30px;
+  margin: 0px;
+}
+
+li{
+  width: auto;
+  height: 100px;
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  border-left: 1px solid black;
+}
+
+ul li:first-child {
+  border-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.container{
+  padding-top: 50px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.location{
+  padding: 10px;
+  border: 2px solid white;
+  width: auto;
+  height: auto;
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.taegu {
+  background-image: url('immagini/Taegu.jpg');
+  background-size: cover;
+  width: 900px;
+  height: 250px;
+  border: 10px solid white;
+  position: relative;
+}
